@@ -1,4 +1,5 @@
 # SeedWork
+![SeedWork Github Action Status](https://github.com/TheLastColonial/SeedWork/workflows/SeedWork/badge.svg)
 [Domain Drive Design](https://en.wikipedia.org/wiki/Domain-driven_design) supporting helper classes based on [Microsoft examples](https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/src/Services/Ordering/Ordering.Domain/SeedWork).
 
 ## Installation
