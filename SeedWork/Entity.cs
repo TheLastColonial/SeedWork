@@ -22,6 +22,21 @@
             this.Id = id ?? throw new ArgumentNullException(nameof(id));
         }
 
+        public static bool operator ==(Entity<T> left, Entity<T> right)
+        {
+            if (Object.Equals(left, null))
+            {
+                return (Object.Equals(right, null)) ? true : false;
+            }
+            else
+            {
+                return left.Equals(right);
+            }                
+        }
 
+        public static bool operator !=(Entity<T> left, Entity<T> right)
+        {
+            return !(left == right);
+        }
     }
 }
