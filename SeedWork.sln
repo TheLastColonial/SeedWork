@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedWork", "SeedWork\SeedWork.csproj", "{CA79E5B4-18B1-4517-B0EA-DEF9FC0C8C8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeedWork", "SeedWork\SeedWork.csproj", "{CA79E5B4-18B1-4517-B0EA-DEF9FC0C8C8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedWork.UnitTests", "SeedWork.UnitTests\SeedWork.UnitTests.csproj", "{D22F5C0E-DBF5-4B2C-B9D1-283046141FCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CA79E5B4-18B1-4517-B0EA-DEF9FC0C8C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA79E5B4-18B1-4517-B0EA-DEF9FC0C8C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA79E5B4-18B1-4517-B0EA-DEF9FC0C8C8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D22F5C0E-DBF5-4B2C-B9D1-283046141FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D22F5C0E-DBF5-4B2C-B9D1-283046141FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D22F5C0E-DBF5-4B2C-B9D1-283046141FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D22F5C0E-DBF5-4B2C-B9D1-283046141FCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
