@@ -1,7 +1,10 @@
 # SeedWork
-![SeedWork Github Action Status](https://github.com/TheLastColonial/SeedWork/workflows/SeedWork/badge.svg)
 
 [Domain Drive Design](https://en.wikipedia.org/wiki/Domain-driven_design) supporting helper classes based on [Microsoft examples](https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/src/Services/Ordering/Ordering.Domain/SeedWork).
+
+[Build](https://github.com/TheLastColonial/SeedWork/blob/master/.github/workflows/pipeline.yml) | ![SeedWork Github Action Status](https://github.com/TheLastColonial/SeedWork/workflows/SeedWork/badge.svg) 
+
+[SonarCloud](https://sonarcloud.io/dashboard?id=TheLastColonial_SeedWork) | [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=TheLastColonial_SeedWork&metric=bugs)](https://sonarcloud.io/dashboard?id=TheLastColonial_SeedWork) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=TheLastColonial_SeedWork&metric=code_smells)](https://sonarcloud.io/dashboard?id=TheLastColonial_SeedWork) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=TheLastColonial_SeedWork&metric=coverage)](https://sonarcloud.io/dashboard?id=TheLastColonial_SeedWork) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=TheLastColonial_SeedWork&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=TheLastColonial_SeedWork)
 
 ## Installation
 
