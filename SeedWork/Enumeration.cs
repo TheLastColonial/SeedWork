@@ -45,7 +45,22 @@
 
             return fields.Select(f => f.GetValue(null)).Cast<T>();
         }
-                
+
+        public override bool Equals(object obj)
+        {
+            var otherValue = obj as Enumeration;
+
+            if (otherValue == null)
+            {
+                return false;
+            }
+
+            var typeMatches = this.GetType().Equals(obj.GetType());
+            var valueMatches = this.Id.Equals(otherValue.Id);
+
+            return typeMatches && valueMatches;
+        }
+
         public override int GetHashCode() => this.Id.GetHashCode();
 
         /// <summary>
@@ -107,8 +122,8 @@
         /// <summary>
         /// Compares the <see cref="Id"/>
         /// </summary>
-        /// <param name="other">Alternative <see cref="object"/></param>
+        /// <param name="obj">Other <see cref="object"/> for comparision</param>
         /// <returns>Standard comparison bits</returns>
-        public int CompareTo(object other) => Id.CompareTo(((Enumeration)other).Id);
+        public int CompareTo(object obj) => Id.CompareTo(((Enumeration)obj).Id);
     }
 }
