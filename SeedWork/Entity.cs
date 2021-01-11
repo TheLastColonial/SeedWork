@@ -7,7 +7,7 @@
     /// </summary>
     /// <typeparam name="T">Id Type</typeparam>
     /// <seealso cref="https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-domain-model#the-domain-entity-pattern"/>
-    public class Entity<T>
+    public abstract class Entity<T>
     {
         /// <summary>
         /// Key
@@ -20,23 +20,6 @@
         public Entity(T id)
         {
             this.Id = id ?? throw new ArgumentNullException(nameof(id));
-        }
-
-        public static bool operator ==(Entity<T> left, Entity<T> right)
-        {
-            if (Object.Equals(left, null))
-            {
-                return (Object.Equals(right, null)) ? true : false;
-            }
-            else
-            {
-                return left.Equals(right);
-            }                
-        }
-
-        public static bool operator !=(Entity<T> left, Entity<T> right)
-        {
-            return !(left == right);
         }
     }
 }
