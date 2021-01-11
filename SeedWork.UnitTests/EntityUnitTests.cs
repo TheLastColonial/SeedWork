@@ -7,7 +7,9 @@
     public class EntityUnitTests
     {
         /// <summary>
-        /// GivenAnEntityHasAPrimaryKey_WhenContructionWithInt_ThenEntitySuccessfulCreates
+        /// Given an entity has a primary key
+        /// When contruction with int
+        /// Then entity successful creates itself
         /// </summary>
         [Test]
         public void Construct_WithValidId_ShouldBeSuccessful()
