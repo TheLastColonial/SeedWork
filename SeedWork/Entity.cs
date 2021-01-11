@@ -17,7 +17,7 @@
         /// <summary>
         /// </summary>
         /// <param name="id">Primary key of the <see cref="Entity{T}"/></param>
-        public Entity(T id)
+        protected Entity(T id)
         {
             this.Id = id ?? throw new ArgumentNullException(nameof(id));
         }
