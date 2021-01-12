@@ -339,3 +339,4 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 /SeedWork.UnitTests/coverage.json
+/SeedWork.UnitTests/coverage.opencover.xml
