@@ -25,6 +25,8 @@
   - NUnit Test Adapter 3.16.1
 - Microsoft.NET.Test.Sdk 16.5.0
 - FluentAssersions 5.10.3
+- coverlet.msbuild 3.0.0
+- OpenCover 4.7.922
 
 ## Usages
 
