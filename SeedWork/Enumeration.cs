@@ -124,6 +124,6 @@
         /// </summary>
         /// <param name="obj">Other <see cref="object"/> for comparision</param>
         /// <returns>Standard comparison bits</returns>
-        public int CompareTo(object obj) => Id.CompareTo(((Enumeration)obj).Id);
+        public int CompareTo(object obj) => this.Id.CompareTo(((Enumeration)obj).Id);
     }
 }
