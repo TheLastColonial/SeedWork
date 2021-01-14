@@ -1,5 +1,6 @@
 ﻿namespace SeedWork.UnitTests
 {
+    using System;
     using FluentAssertions;
     using NUnit.Framework;
 
@@ -7,28 +8,37 @@
     public class EntityUnitTests
     {
         /// <summary>
-        /// Given an entity has a primary key
-        /// When contruction with int
-        /// Then entity successful creates itself
+        /// Given an <see cref="Entity{T}"/> has a <see cref="Entity{T}.Id"/>
+        /// When contruction with <see cref="string"/>
+        /// Then <see cref="Entity{T}"/> successful creates itself
         /// </summary>
         [Test]
         public void Construct_WithValidId_ShouldBeSuccessful()
         {
-            // Arrange
-
             // Act
-            var entity = new EntityStub(1);
+            var entity = new EntityStub("1");
 
             // Assert
             entity.Should().NotBeNull()
-                .And.BeAssignableTo(typeof(Entity<uint>));
-            entity.Id.Should().Be(1);
+                .And.BeAssignableTo(typeof(Entity<string>));
+            entity.Id.Should().Be("1");
+        }
+
+        /// <summary>
+        /// Given an <see cref="Entity{T}"/> is implimented
+        /// When constucting with <see cref="null"/> <see cref="Entity{T}.Id"/>
+        /// Then an <see cref="ArgumentNullException"/> should be thrown
+        /// </summary>
+        [Test]
+        public void Constuct_WithEmptyId_ThrowsException()
+        {
+            Assert.Throws<ArgumentNullException>(() => { new EntityStub(null); });
         }
     }
 
-    class EntityStub : Entity<uint>
+    class EntityStub : Entity<string>
     {        
-        public EntityStub(uint id) : base (id)
+        public EntityStub(string id) : base (id)
         {
         }
     }
