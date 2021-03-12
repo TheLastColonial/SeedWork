@@ -16,7 +16,7 @@
         public void Construct_WithValidId_ShouldBeSuccessful()
         {
             // Act
-            var entity = new EntityStub("1");
+            var entity = new PersonStub("1");
 
             // Assert
             entity.Should().NotBeNull()
@@ -32,13 +32,13 @@
         [Test]
         public void Constuct_WithEmptyId_ThrowsException()
         {
-            Assert.Throws<ArgumentNullException>(() => { new EntityStub(null); });
+            Assert.Throws<ArgumentNullException>(() => { new PersonStub(null); });
         }
     }
 
-    class EntityStub : Entity<string>
+    class PersonStub : Entity<string>
     {        
-        public EntityStub(string id) : base (id)
+        public PersonStub(string id) : base (id)
         {
         }
     }
